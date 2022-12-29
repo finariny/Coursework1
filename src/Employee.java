@@ -7,6 +7,9 @@ public class Employee {
 
 
     public Employee(String fullName, int department, int salary) {
+        if (department <= 0 || department > 5) {
+            throw new IllegalArgumentException("Такого отдела нет");
+        }
         this.fullName = fullName;
         this.department = department;
         this.salary = salary;

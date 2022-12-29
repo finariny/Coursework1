@@ -1,16 +1,36 @@
 public class Main {
     public static void main(String[] args) {
         EmployeeBook employeeBook = new EmployeeBook();
-        employeeBook.addEmployee("Дементьев Руслан Васильевич", 1, 26700);
-        employeeBook.addEmployee("Захарова Кристина Анатольевна", 3, 31400);
-        employeeBook.addEmployee("Сидоров Семён Александрович", 2, 38900);
-        employeeBook.addEmployee("Васнецов Артём Сергеевич", 1, 34600);
-        employeeBook.addEmployee("Кутузова Анна Сергеевна", 3, 24700);
-        employeeBook.addEmployee("Кузьмина Екатерина Вячеславовна", 2, 32200);
-        employeeBook.addEmployee("Петров Алексей Леонидович", 4, 25900);
-        employeeBook.addEmployee("Замараева Лидия Владимировна", 5, 25300);
-        employeeBook.addEmployee("Семаков Андрей Анатольевич", 4, 32500);
-        employeeBook.addEmployee("Краснопёрова Татьяна Викторовна", 5, 23600);
+
+        Employee employee1 = new Employee("Дементьев Руслан Васильевич", 1, 26700);
+        employeeBook.addEmployee(employee1);
+
+        Employee employee2 = new Employee("Захарова Кристина Анатольевна", 3, 31400);
+        employeeBook.addEmployee(employee2);
+
+        Employee employee3 = new Employee("Сидоров Семён Александрович", 2, 38900);
+        employeeBook.addEmployee(employee3);
+
+        Employee employee4 = new Employee("Васнецов Артём Сергеевич", 1, 34600);
+        employeeBook.addEmployee(employee4);
+
+        Employee employee5 = new Employee("Кутузова Анна Сергеевна", 3, 24700);
+        employeeBook.addEmployee(employee5);
+
+        Employee employee6 = new Employee("Кузьмина Екатерина Вячеславовна", 2, 32200);
+        employeeBook.addEmployee(employee6);
+
+        Employee employee7 = new Employee("Петров Алексей Леонидович", 4, 25900);
+        employeeBook.addEmployee(employee7);
+
+        Employee employee8 = new Employee("Замараева Лидия Владимировна", 5, 25300);
+        employeeBook.addEmployee(employee8);
+
+        Employee employee9 = new Employee("Семаков Андрей Анатольевич", 4, 325000);
+        employeeBook.addEmployee(employee9);
+
+        Employee employee10 = new Employee("Краснопёрова Татьяна Викторовна", 5, 23600);
+        employeeBook.addEmployee(employee10);
 
         System.out.println("Базовая сложность");
 
@@ -51,7 +71,7 @@ public class Main {
 
         employeeBook.removeEmployee(7);
 
-        employeeBook.addEmployee("Нестеров Алексей Павлович", 4, 26700);
+        employeeBook.addEmployee(new Employee("Нестеров Алексей Павлович", 4, 26700));
 
         employeeBook.changeEmployeeSalary("Кутузова Анна Сергеевна", 26500);
 

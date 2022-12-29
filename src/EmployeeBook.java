@@ -231,15 +231,11 @@ public class EmployeeBook {
     // Очень сложно
     // 4. Добавить несколько новых методов:
     // а. Добавить нового сотрудника
-    public void addEmployee (String fullName, int department, int salary) {
-        if (department <= 0 || department > 5) {
-            throw new IllegalArgumentException("Такого отдела нет");
-        }
+    public void addEmployee (Employee employee) {
         if (size >= employees.length) {
             throw new IllegalArgumentException("Нельзя добавить нового сотрудника, закончилось место");
         }
-        Employee newEmployee = new Employee(fullName, department, salary);
-        employees[size++] = newEmployee;
+        employees[size++] = employee;
     }
 
     // b. Удалить сотрудника
